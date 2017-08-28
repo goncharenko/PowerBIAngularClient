@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "sourceMap": false,
+    "typeRoots": [
+      "../node_modules/@types/"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": [ "node" ],
+    "typeRoots": [ "../node_modules/@types" ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  }
+}
