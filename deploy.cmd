@@ -119,11 +119,15 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+:: 6. Install Webpack
+echo Verifying Typescript Install.
+call :ExecuteCmd !NPM_CMD! install webpack -g
+
 :: 7. Run webpack
 echo Run webpack.
 call :ExecuteCmd yarn build
 
-:: 6. Compile TypeScript
+:: 8. Compile TypeScript
 echo Compile TypeScript.
 call :ExecuteCmd tsc -p "%DEPLOYMENT_TARGET%"
 
