@@ -119,6 +119,10 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+:: 7. Run webpack
+echo Run webpack.
+call :ExecuteCmd yarn build
+
 :: 6. Compile TypeScript
 echo Compile TypeScript.
 call :ExecuteCmd tsc -p "%DEPLOYMENT_TARGET%"

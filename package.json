@@ -8,7 +8,7 @@
     "build": "webpack --progress",
     "build:prod": "webpack -p --progress",
     "dev": "concurrently \"webpack --watch --colors\" \"ts-node -r tsconfig-paths/register server.ts\"",
-    "start": "yarn run build && node dist\\server.js"
+    "start": "node dist\\server.js"
   },
   "dependencies": {
     "@angular/common": "^4.3.6",
