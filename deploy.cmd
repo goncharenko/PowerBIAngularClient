@@ -113,6 +113,7 @@ call :ExecuteCmd !NPM_CMD! install typescript -g
 :: 5. Install Webpack
 echo Verifying Typescript Install.
 call :ExecuteCmd !NPM_CMD! install webpack
+call :ExecuteCmd !NPM_CMD! install html-loader
 call :ExecuteCmd !NPM_CMD! install html-webpack-plugin
 call :ExecuteCmd !NPM_CMD! install path
 call :ExecuteCmd !NPM_CMD! install raw-loader
