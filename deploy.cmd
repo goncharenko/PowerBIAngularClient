@@ -123,13 +123,13 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
-:: 7. Run webpack
-echo Run webpack.
-call :ExecuteCmd webpack
-
-:: 8. Compile TypeScript
+:: 7. Compile TypeScript
 echo Compile TypeScript.
 call :ExecuteCmd tsc -p "%DEPLOYMENT_TARGET%"
+
+:: 8. Run webpack
+echo Run webpack.
+call :ExecuteCmd webpack
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
