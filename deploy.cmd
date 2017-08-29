@@ -110,6 +110,10 @@ call :ExecuteCmd !NPM_CMD! install yarn -g
 echo Verifying Typescript Install.
 call :ExecuteCmd yarn global add typescript
 
+:: 5. Install Typescript
+echo Verifying Typescript Install.
+call :ExecuteCmd yarn global add webpack
+
 :: 6. Install Yarn packages
 echo Installing Yarn Packages.
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
