@@ -2,7 +2,7 @@ import app from './server/app';
 
 const port = process.env.PORT || 5000;
 
-app.listen(port, (err) => {
+app.listen(port, (err: any) => {
   if (err) {
     return console.log(err);
   }
