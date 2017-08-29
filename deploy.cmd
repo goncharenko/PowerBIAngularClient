@@ -112,18 +112,13 @@ call :ExecuteCmd !NPM_CMD! install typescript
 
 :: 5. Install Webpack
 echo Verifying Typescript Install.
-call :ExecuteCmd !NPM_CMD! install webpack
-call :ExecuteCmd !NPM_CMD! install html-loader
-call :ExecuteCmd !NPM_CMD! install html-webpack-plugin
-call :ExecuteCmd !NPM_CMD! install raw-loader
-call :ExecuteCmd !NPM_CMD! install awesome-typescript-loader
-call :ExecuteCmd !NPM_CMD! install angular2-template-loader
+call :ExecuteCmd !NPM_CMD! install webpack -g
 
 :: 6. Install Yarn packages
 echo Installing Yarn Packages.
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd yarn install
+  call :ExecuteCmd yarn install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
