@@ -115,7 +115,6 @@ echo Verifying Typescript Install.
 call :ExecuteCmd !NPM_CMD! install webpack
 call :ExecuteCmd !NPM_CMD! install html-loader
 call :ExecuteCmd !NPM_CMD! install html-webpack-plugin
-call :ExecuteCmd !NPM_CMD! install path
 call :ExecuteCmd !NPM_CMD! install raw-loader
 call :ExecuteCmd !NPM_CMD! install awesome-typescript-loader
 call :ExecuteCmd !NPM_CMD! install angular2-template-loader
