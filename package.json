@@ -28,7 +28,6 @@
     "path": "^0.12.7",
     "rxjs": "^5.4.3",
     "zone.js": "^0.8.17",
-    "//": "Move here from devDependencies for Azure Kudu deploy",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.2.3",
     "html-loader": "^0.5.1",
