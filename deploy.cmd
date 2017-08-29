@@ -110,7 +110,11 @@ call :ExecuteCmd !NPM_CMD! install yarn -g
 echo Verifying Typescript Install.
 call :ExecuteCmd !NPM_CMD! install typescript -g
 
-:: 5. Install Yarn packages
+:: 5. Install Webpack
+echo Verifying Typescript Install.
+call :ExecuteCmd !NPM_CMD! install webpack
+
+:: 6. Install Yarn packages
 echo Installing Yarn Packages.
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
@@ -118,10 +122,6 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
-
-:: 6. Install Webpack
-echo Verifying Typescript Install.
-call :ExecuteCmd !NPM_CMD! install webpack -g
 
 :: 7. Run webpack
 echo Run webpack.
