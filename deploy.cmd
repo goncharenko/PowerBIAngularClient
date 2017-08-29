@@ -113,6 +113,8 @@ call :ExecuteCmd !NPM_CMD! install typescript -g
 :: 5. Install Webpack
 echo Verifying Typescript Install.
 call :ExecuteCmd !NPM_CMD! install webpack
+call :ExecuteCmd !NPM_CMD! install html-webpack-plugin
+call :ExecuteCmd !NPM_CMD! install path
 
 :: 6. Install Yarn packages
 echo Installing Yarn Packages.
